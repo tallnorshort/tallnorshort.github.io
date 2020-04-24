@@ -1,0 +1,110 @@
+/*
+ First External CSS Stylesheet
+ */
+
+/* Styling for HTML elements */
+
+
+p {border-style: ridge;
+   background: rgb(248, 252, 255);
+   padding: 10px;
+   margin: 10px;
+   }
+#p {border-style: ridge;
+  background: rgb(248, 252, 255);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  }
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 100%;
+    color: rgb(19, 0, 63);
+    background: #d4be13;
+  }
+  
+  header {
+    background: #333;
+  }
+  
+  h1 {
+    text-decoration: underline;
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color #000000;
+    text-align: center;
+  }
+  
+  h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color #000000;
+    text-align: center;
+  }
+  
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  a {
+    color: #d21034;
+  }
+  
+  /* Selecting elements by class */
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  
+  /* Selecting elements by ID */
+  #main-bio,
+  #contact-info,
+  #bio-image {
+    float: left;
+  }
+  
+  #figure {
+    position: relative;
+  }
+  
+  #bio-name {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+  }
+  
+  #main-bio {
+    width: 70%;
+  }
+  
+  #contact-info {
+    width: 30%;
+  }
+  
+  #bio-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+
+  @media only screen and (max-width: 650px) {
+    table {
+        width:95%;
+    }
+    input[type=text], textarea {
+        width:35%;
+    }
+  }
+  
