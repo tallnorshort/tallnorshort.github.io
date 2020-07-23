@@ -1,0 +1,62 @@
+<meta charset="utf-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="fantasy_football.png" type="image/x-icon">
+</head>
+<body>
+<nav>
+  <div class="sidenav">
+    <a href="index.html">Home Page</a>
+    <a href="matplotlib.html">MatplotLib</a>
+    <a href="tableau.html">Tableau</a>
+    <a href="Machine_Learning.html">Machine Learning</a>
+ </div>
+ </nav>
+<select id="drop-down-id">
+        <option value="Fantasy_QB.png" class="center" width="300" height="500">Line Chart QB</option>
+        <option value="Top_QB3.png" class="center" width="300" height="500">Top 10 QBs (Mean FF Scored per game) </option>
+        <option value="Fantasy_WR.png" class="center" width="300" height="500"> Line Chart WR </option>
+        <option value="Top_WR3.png" class="center" width="300" height="500"> WR Bar Chart (Top 10) </option>
+        <option value="Fantasy_RB.png" class="center" width="300" height="500"> Line Chart RB </option>
+        <option value="Top_RB3.png" class="center" width="300" height="500">  Bar Chart (Top 10) </option>
+        <option value="Kicker_Top_10.png" class="center" width="300" height="500"> Kicker (Top 10) </option>
+        <option value="Top_5_Line.png" class="center" width="300" height="500"> Kicker Line Chart </option>
+        <option value="Fantasy_Defense.png" class="center" width="300" height="500"> Defense Line Chart </option>
+        <option value="Top_Defense.png" class="center" width="300" height="500"> Defense (Top Ten) </option>
+        <option value="Fantasy_TE.png" class="center" width="300" height="500"> TE Line Chart </option>
+        <option value="Top_TE3.png" class="center" width="300" height="500"> TE (Top Ten) </option>
+    </select>
+    <img id="image-id" src="Fantasy_QB.png" width="300" height="500" class="center"/>
+        <script>
+            d3.select('#drop-down-id').on('change', function() {
+              const imageUrl = d3.select(this).property('value');
+              d3.select('#image-id')
+                .property('src',imageUrl);
+            });
+        </script>
+  </body>
+
+</html>
